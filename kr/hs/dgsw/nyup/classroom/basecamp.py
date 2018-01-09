@@ -7,4 +7,4 @@ difference = 1
 # 거리
 distance = bike * walk * difference / (bike - walk)
 # 출력
-print("베이스 캠프 1과 베이스 캠프 2는 ", distance, "km 만큼 떨어져 있습니다.")
+print("베이스 캠프 1과 베이스 캠프 2는", distance, "km 만큼 떨어져 있습니다.")
