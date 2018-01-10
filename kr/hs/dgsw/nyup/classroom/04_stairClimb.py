@@ -13,11 +13,12 @@ def stairClimb(stair):
     return cur
 
 def climbStair(stair):
-    if stair == 1:
+    if stair == 0:
+        way = 0
+    elif stair == 1:
         way = 1
-    if stair == 2:
-        way = 2
-    way = stairClimb(stair - 1) + stairClimb(stair - 2)
+    else:
+        way = stairClimb(stair - 1) + stairClimb(stair - 2)
     print("계단을 올라가는 방법은", way, "가지 입니다.")
 
 climbStair(stair)
