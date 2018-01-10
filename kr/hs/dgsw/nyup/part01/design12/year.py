@@ -1,5 +1,5 @@
 # 연도
-y = 304
+y = 2000
 
 # 평년, 윤년
 year = ['common', 'leap']
@@ -16,7 +16,7 @@ x = y % 4 != 0 | (y % 100 == 0 and y % 400 != 0)
 print(year[x])
 
 # 윤년, 평년
-year = ['leap', 'common']
+year = ['common', 'leap']
 # 논리 연산
 x = (y % 4 == 0 and y % 100 != 0) | y % 400 == 0
 # 출력
