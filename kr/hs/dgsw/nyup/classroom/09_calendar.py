@@ -6,17 +6,17 @@ year = 2000
 dan = 3
 day = 0
 
+def cl_function(n):
+    x = 0 if n % 4 != 0 | (n % 100 == 0 and n % 400 != 0) else 1
+
 for i in range(1, year + 1):
     day += 365
-    x = 0 if i % 4 != 0 | (i % 100 == 0 and i % 400 != 0) else 1
-    if x == 1:
+    if cl_function(i) == 1:
         day += 1
 
 w = day % 7
 
-x = 0 if year % 4 != 0 | (year % 100 == 0 and year % 400 != 0) else 1
-if x == 0:
+if cl_function(year) == 0:
     print(weak[w])
 else:
     print(weak[w - 1])
-
