@@ -13,3 +13,13 @@ now = [[0, 0, 0, 0, 0, 0, 0, 0],
        [0, 0, 0, 0, 0, 0, 0, 0],
        [0, 0, 0, 0, 0, 0, 0, 0]]
 
+for i in range(size):
+    for j in range(size):
+        if now[i][j] == 0:
+            print(' %s ' %'+', end=' ')
+        elif now[i][j] == 1:
+            print(' %s ' %'●', end=' ')
+        else:
+           print(' %s ' %'○', end=' ')
+    print('')
+    print('')
