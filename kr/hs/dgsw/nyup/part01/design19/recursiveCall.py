@@ -18,9 +18,9 @@ def f3(n):
     return n + f3(n - 1)
 
 def f4(n):
-    if n == -1:
+    if n <= 0:
         return 0
-    return n +f4(n - 1)
+    return n + (n - 1) + f4(n - 2)
 
 s = 0
 print(f1(10))
