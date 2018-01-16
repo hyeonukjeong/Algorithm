@@ -1,12 +1,9 @@
-n = input('몇 자리 이진수가 필요하신가요? ')
-m = 0
+def f(n, s):
+    if n == 0:
+        print(s)
+        return
+    f(n -1, s + '0')
+    f(n -1, s + '1')
+    return
 
-def binFunc(n):
-    if m == n:
-        return m
-    else:
-        print(bin(m))
-        return binFunc(int(n) - 1)
-
-binFunc(n)
-
+f(5, '')
