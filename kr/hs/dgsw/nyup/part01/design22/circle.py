@@ -11,7 +11,7 @@ t.up(); t.goto(0, 360); t.down()
 p = m.pi
 r = 360
 
-for i in range(0, 721, 144):
+for i in range(0, 361):
     a = p * i / 180.0
     x = r * m.sin(a)
     y = r * m.cos(a)
